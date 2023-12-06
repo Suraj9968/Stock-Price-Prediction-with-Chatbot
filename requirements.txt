@@ -73,4 +73,3 @@ yfinance
 keras-models
 cufflinks
 plotly
-os
