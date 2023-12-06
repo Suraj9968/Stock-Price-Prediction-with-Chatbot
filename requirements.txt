@@ -74,3 +74,4 @@ keras-models
 cufflinks
 plotly
 tensorflow
+scikit-learn
