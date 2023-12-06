@@ -32,7 +32,7 @@ end_date = st.sidebar.date_input("End date", datetime.date(2021, 1, 31))
 
 
 # Retrieving tickers data
-ticker_list = pd.read_csv('D:\Minor Project\constituents_symbols.txt')
+ticker_list = pd.read_csv('constituents_symbols.txt')
 tickerSymbol = st.sidebar.selectbox('Stock ticker', ticker_list) # Select ticker symbol
 
 with st.sidebar:
