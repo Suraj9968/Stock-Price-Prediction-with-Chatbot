@@ -9,7 +9,6 @@ from keras.models import load_model
 import cufflinks as cf
 from plotly import graph_objs as go
 import replicate
-import os
 from openai import OpenAI
 
 # App title
