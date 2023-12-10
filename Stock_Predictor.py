@@ -127,7 +127,7 @@ top_p = st.sidebar.slider('top_p', min_value=0.01, max_value=1.0, value=0.9, ste
 max_length = st.sidebar.slider('max_length', min_value=32, max_value=128, value=120, step=8)
 
 with st.sidebar:
-    openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
+    openai_api_key = st.text_input("Replicate API Key", key="chatbot_api_key", type="password")
 
 st.caption("🚀 Stock-GPT powered by Llama LLM")
 if "messages" not in st.session_state:
@@ -138,7 +138,7 @@ for msg in st.session_state.messages:
 
 if prompt := st.chat_input():
     if not openai_api_key:
-        st.info("Please add your Eeplicate API key to continue.")
+        st.info("Please add your Replicate API key to continue.")
         st.stop()
 
     client = OpenAI(api_key=openai_api_key)
