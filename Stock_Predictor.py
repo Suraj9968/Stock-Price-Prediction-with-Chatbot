@@ -26,7 +26,7 @@ st.write('---')
 # Sidebar
 st.sidebar.subheader('Query parameters')
 start_date = st.sidebar.date_input("Start date", datetime.date(2010, 1, 1))
-end_date = st.sidebar.date_input("End date", datetime.date(2021, 1, 31))
+end_date = st.sidebar.date_input("End date", datetime.date(2023, 12, 10))
 
 
 
