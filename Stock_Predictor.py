@@ -19,7 +19,7 @@ st.markdown('''
 Shown are the stock price data for query companies!
 
 **Credits**
-- App built by Suraj
+- App built by Suraj, Divjot, Kirat and Simarjeet
 - Built in `Python` using `streamlit`,`yfinance`, `cufflinks`, `pandas` and `datetime`
 ''')
 st.write('---')
@@ -96,8 +96,7 @@ scaler_factor = 1/scaler[0]
 y_predicted = y_predicted * scaler_factor
 y_test = y_test * scaler_factor
 
-st.write('len of y_test',len(y_test))
-st.write('len of y_predicted',len(y_predicted))
+
 
 # Bollinger bands
 st.header('**Bollinger Bands**')
@@ -139,7 +138,7 @@ for msg in st.session_state.messages:
 
 if prompt := st.chat_input():
     if not openai_api_key:
-        st.info("Please add your OpenAI API key to continue.")
+        st.info("Please add your Eeplicate API key to continue.")
         st.stop()
 
     client = OpenAI(api_key=openai_api_key)
